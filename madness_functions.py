@@ -44,23 +44,23 @@ def ninemm():
         print("You fire your 9mm, but the bullet barely grazes him. You deal " + str(ninemm_attack) + " damage.")
     else:
         if ninemm_attack <= 4:
-            print("Neutral hit "+ str(ninemm_attack) + " damage.")
+            print("You fire your 9mm and manage to land a shot on the Sheriff. You deal "+ str(ninemm_attack) + " damage.")
         else:
             if ninemm_attack <= 6:
-                print("Critical hit "+ str(ninemm_attack) + " damage.")
+                print("You fire your 9mm and shoot the Sheriff in the shoulder. You deal "+ str(ninemm_attack) + " damage.")
 
 # Give the user a deagle option, 1d12
 def deagle():
     print("You pull out a pistol, aim, and fire at the Sheriff.")
     deagle_attack = random.randint(1, 12)
     if deagle_attack <= 2:
-        print("Barely hit " + str(deagle_attack) + " damage.")
+        print("You fire your pistol but the bullets only graze his arm. You deal " + str(deagle_attack) + " damage.")
     else:
         if deagle_attack <= 6:
-            print("Neutral hit " + str(deagle_attack) + " damage.")
+            print("You fire your pistol, and the bullets graze his side. You deal " + str(deagle_attack) + " damage.")
         else:
             if deagle_attack <= 10:
-                print("Critical hit " + str(deagle_attack) + " damage.")
+                print("You fire your pistol and the bullets get lodged in his chest. You deal " + str(deagle_attack) + " damage.")
 
 # Provide the user with a randomize option, these filter through the other attack options and will do damage accordingly
 def randomized_weapon():
